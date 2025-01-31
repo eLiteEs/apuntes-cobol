@@ -1,0 +1,14 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. LOOPS.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 CONTADOR PIC 9(2) VALUE 1.
+
+       PROCEDURE DIVISION.
+           PERFORM HASTA-5-TIMES UNTIL CONTADOR > 5.
+           STOP RUN.
+
+       HASTA-5-TIMES.
+           DISPLAY "Iteración número: " CONTADOR.
+           ADD 1 TO CONTADOR.
